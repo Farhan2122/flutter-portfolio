@@ -1,0 +1,54 @@
+name: portfolio_app
+description: "Muhammad Farhan — Flutter Developer Portfolio"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # URL launcher for opening external links
+  url_launcher: ^6.3.1
+
+  # Elegant animations
+  flutter_animate: ^4.5.0
+
+  # Google Fonts (Inter)
+  google_fonts: ^6.2.1
+
+  # Scroll visibility detection for entrance animations
+  visibility_detector: ^0.4.0+2
+
+  # Font Awesome icons
+  font_awesome_flutter: ^10.7.0
+
+  # Responsive layout framework
+  responsive_framework: ^1.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/files/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#007AFF"
+  adaptive_icon_foreground: "assets/icons/app_icon.png"

@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+
+/// Custom loading indicator widget
+class LoadingIndicator extends StatelessWidget {
+  const LoadingIndicator({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return CircularProgressIndicator(
+      color: Theme.of(context).colorScheme.primary,
+    );
+  }
+}

@@ -1,0 +1,2 @@
+This directory is for project images and screenshots.
+Add your app screenshots here for Watt Audit and CEERTIFS projects.
