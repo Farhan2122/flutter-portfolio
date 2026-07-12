@@ -113,7 +113,7 @@ class TechStackSection extends StatelessWidget {
 }
 
 class _TechIcon extends StatefulWidget {
-  final IconData icon;
+  final FaIconData icon;
   final String label;
   final Color color;
   final bool isDark;

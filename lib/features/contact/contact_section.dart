@@ -219,7 +219,7 @@ class _EmailButtonState extends State<_EmailButton> {
 }
 
 class _SocialButton extends StatefulWidget {
-  final IconData icon;
+  final FaIconData icon;
   final String label;
   final String url;
   final bool isDark;

@@ -26,7 +26,7 @@ dependencies:
   visibility_detector: ^0.4.0+2
 
   # Font Awesome icons
-  font_awesome_flutter: ^10.7.0
+  font_awesome_flutter: ^11.0.0
 
   # Responsive layout framework
   responsive_framework: ^1.5.1
