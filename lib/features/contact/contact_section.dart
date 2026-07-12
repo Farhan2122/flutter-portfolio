@@ -131,14 +131,13 @@ class ContactSection extends StatelessWidget {
                     _SocialButton(
                       icon: FontAwesomeIcons.whatsapp,
                       label: 'WhatsApp',
-                      url: 'https://wa.me/923001234567',
+                      url: 'https://wa.me/923184272107',
                       isDark: isDark,
                     ),
                   ],
                 ),
 
                 const SizedBox(height: 32),
-
                 // Location
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
