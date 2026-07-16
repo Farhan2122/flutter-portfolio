@@ -163,9 +163,6 @@ class PortfolioRepository {
           'Face Recognition',
         ],
         imageUrls: [],
-        playStoreUrl:
-            'https://play.google.com/store/apps/details?id=com.hexasoft.bch',
-        appStoreUrl: 'https://apps.apple.com/pk/app/ceertifs/id1456381091',
         displayOrder: 1,
       ),
       Project(
@@ -184,15 +181,19 @@ class PortfolioRepository {
       ),
       Project(
         id: '3',
-        name: 'CutForU',
+        name: 'Tadrees ul Quran',
         description:
-            'Smart barber-shop booking and management app. Customers can browse, '
-            'book appointments, and track queue status in real-time. '
-            'Barbers manage their schedule, services, and customer list.',
-        technologies: ['Flutter', 'Firebase', 'GetX', 'Notifications'],
-        imageUrls: [],
+            'Quran learning app with Urdu Tafseer and Tajweed support for SAFA Institute. '
+            'Features structured learning programs, verse-by-verse Urdu translation, '
+            'deep linking, and external content integration for an immersive study experience.',
+        technologies: ['Flutter', 'Deep Linking', 'GetX', 'REST API'],
+        imageUrls: [
+          'assets/images/QuranLearning/quran_dashboard.jpeg',
+          'assets/images/QuranLearning/quran_app_boxes.jpeg',
+          'assets/images/QuranLearning/safa_loading.jpeg',
+        ],
         playStoreUrl:
-            'https://play.google.com/store/apps/details?id=com.cutforu.app',
+            'https://play.google.com/store/apps/details?id=com.tadreesulquran.app',
         displayOrder: 3,
       ),
     ];

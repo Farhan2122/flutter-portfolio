@@ -144,6 +144,23 @@ class _CardImageHeader extends StatelessWidget {
     required this.hovered,
   });
 
+  Widget _buildImage(String url) {
+    final isAsset = url.startsWith('assets/');
+    return isAsset
+        ? Image.asset(
+            url,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) =>
+                _Placeholder(project: project, isDark: isDark),
+          )
+        : Image.network(
+            url,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) =>
+                _Placeholder(project: project, isDark: isDark),
+          );
+  }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
@@ -171,17 +188,23 @@ class _CardImageHeader extends StatelessWidget {
           end: Alignment.bottomRight,
         ),
       ),
-      child: project.imageUrls.isNotEmpty
-          ? ClipRRect(
-              child: Image.network(
-                project.imageUrls.first,
-                fit: BoxFit.cover,
-                width: double.infinity,
-                errorBuilder: (_, __, ___) =>
-                    _Placeholder(project: project, isDark: isDark),
+      child: project.imageUrls.isEmpty
+          ? _Placeholder(project: project, isDark: isDark)
+          : project.imageUrls.length == 1
+          ? SizedBox.expand(child: _buildImage(project.imageUrls.first))
+          : ListView.separated(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              itemCount: project.imageUrls.length,
+              separatorBuilder: (_, __) => const SizedBox(width: 8),
+              itemBuilder: (_, i) => ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: AspectRatio(
+                  aspectRatio: 9 / 16,
+                  child: _buildImage(project.imageUrls[i]),
+                ),
               ),
-            )
-          : _Placeholder(project: project, isDark: isDark),
+            ),
     );
   }
 }

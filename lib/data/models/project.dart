@@ -26,9 +26,7 @@ class Project {
     if (description.length < 10) {
       throw ArgumentError('Project description must be at least 10 characters');
     }
-    if (playStoreUrl == null && appStoreUrl == null) {
-      throw ArgumentError('At least one store URL must be provided');
-    }
+    // Store URLs are optional — some projects may be internal or pending release
     if (technologies.isEmpty) {
       throw ArgumentError('Technologies list cannot be empty');
     }
