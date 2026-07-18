@@ -342,8 +342,8 @@ class _HeroVisual extends StatelessWidget {
         scale: 1.0,
       ),
       (
-        label: 'CutForU',
-        sub: 'Barber Booking',
+        label: 'Quick Quran Learning Urdu',
+        sub: 'Tadrees ul Qurans',
         angle: -3.0,
         offset: const Offset(-30, 100),
         scale: 0.85,
