@@ -151,22 +151,43 @@ class PortfolioRepository {
         id: '1',
         name: 'CEERTIF AI',
         description:
-            'Enterprise workforce management system with AI-powered attendance, '
-            'BLE proximity detection, NFC badge scanning, and Face Recognition. '
-            'Built for large organizations to streamline employee management and compliance.',
+            'Field workforce, inspection, and site operations app supporting 4 core workflows: '
+            'workforce tracking, inspections, authentication, and construction site operations. '
+            'Integrates NFC, BLE beacons, face recognition, AI material classification, and Google ML Kit.',
         technologies: [
           'Flutter',
           'Supabase',
-          'BLE',
           'NFC',
-          'AI',
+          'BLE',
           'Face Recognition',
+          'Google ML Kit',
         ],
         imageUrls: [],
         displayOrder: 1,
       ),
       Project(
         id: '2',
+        name: 'TrueMedia (TMS)',
+        description:
+            'Production inspection and certified media app used by field inspectors to document '
+            'working conditions, faults, and photo/video/audio evidence. Features metadata-rich '
+            'certified sharing, blockchain-certificate presentation, and Ray-Ban Meta smart glasses '
+            'integration via the Meta Wearables DAT SDK.',
+        technologies: [
+          'Flutter',
+          'REST API',
+          'Blockchain',
+          'Meta SDK',
+          'Firebase',
+        ],
+        imageUrls: [],
+        playStoreUrl:
+            'https://play.google.com/store/apps/details?id=io.codelounge.tmsapp',
+        appStoreUrl: 'https://apps.apple.com/us/app/truemedia/id6759904982',
+        displayOrder: 2,
+      ),
+      Project(
+        id: '3',
         name: 'WattAudit',
         description:
             'Energy audit and management platform for tracking and optimizing energy consumption. '
@@ -177,10 +198,10 @@ class PortfolioRepository {
         playStoreUrl:
             'https://play.google.com/store/apps/details?id=io.hexasoft.ceert_audit',
         appStoreUrl: 'https://apps.apple.com/pk/app/watt-audit/id6449857114',
-        displayOrder: 2,
+        displayOrder: 3,
       ),
       Project(
-        id: '3',
+        id: '4',
         name: 'Tadrees ul Quran',
         description:
             'Quran learning app with Urdu Tafseer and Tajweed support for SAFA Institute. '
@@ -194,7 +215,7 @@ class PortfolioRepository {
         ],
         playStoreUrl:
             'https://play.google.com/store/apps/details?id=com.tadreesulquran.app',
-        displayOrder: 3,
+        displayOrder: 4,
       ),
     ];
 
